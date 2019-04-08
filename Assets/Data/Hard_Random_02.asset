@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47f31c13c8bb86042a25164a7136e861, type: 3}
+  m_Name: Hard_Random_02
+  m_EditorClassIdentifier: Assembly-CSharp::WaveSettingsRapid/Data
+  delayBeforeStart: 0.8
+  delayAfterEnd: 0
+  level: 2
+  startPos: 1
+  directionMin: {x: 0, y: 1}
+  directionMax: {x: -0.3, y: 1}
+  forceMin: 13
+  forceMax: 15
+  forceMode: 1
+  offsetFromCenterMin: {x: -5, y: 0}
+  offsetFromCenterMax: {x: 5, y: 0}
+  frequencyMin: 0.5
+  frequencyMax: 1
+  objevctPerTickMin: 2
+  objectPerTickMax: 2
+  objectsPerTickStepMin: 0
+  objectsPerTickStepMax: 0
+  tickCount: 2

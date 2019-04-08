@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059a4ef3751c2a14b85434791b4f5e35, type: 3}
+  m_Name: Hard_Precise_03
+  m_EditorClassIdentifier: 
+  delayBeforeStart: 0.5
+  delayAfterEnd: 0
+  level: 2
+  startPos: 0
+  directionMin: {x: 0, y: 0}
+  directionMax: {x: 0, y: 0}
+  forceMin: 0
+  forceMax: 0
+  forceMode: 0
+  offsetFromCenterMin: {x: 0, y: 0}
+  offsetFromCenterMax: {x: 0, y: 0}
+  delayBetween: 0.4
+  datas:
+  - waves:
+    - spawnPoint: {x: 7.8551826, y: -7.315482}
+      rotation: {x: 0, y: 0, z: -0.7023188, w: 0.7118625}
+      force: 13
+  - waves:
+    - spawnPoint: {x: 6.045493, y: -7.1747174}
+      rotation: {x: 0, y: 0, z: -0.7023188, w: 0.7118625}
+      force: 13
+  - waves:
+    - spawnPoint: {x: 3.3106723, y: -7.2253885}
+      rotation: {x: 0, y: 0, z: -0.69866645, w: 0.7154475}
+      force: 13
+  - waves:
+    - spawnPoint: {x: 1.2342353, y: -7.124047}
+      rotation: {x: 0, y: 0, z: -0.6980169, w: 0.71608126}
+      force: 13
+  - waves:
+    - spawnPoint: {x: -1.3486512, y: -6.9720345}
+      rotation: {x: 0, y: 0, z: -0.6980169, w: 0.71608126}
+      force: 13
+  - waves:
+    - spawnPoint: {x: 1.1835886, y: -6.9720345}
+      rotation: {x: 0, y: 0, z: -0.6980169, w: 0.71608126}
+      force: 13
+  - waves:
+    - spawnPoint: {x: 3.006802, y: -6.921363}
+      rotation: {x: 0, y: 0, z: -0.6980169, w: 0.71608126}
+      force: 13
+  - waves:
+    - spawnPoint: {x: 5.741624, y: -7.124047}
+      rotation: {x: 0, y: 0, z: -0.6980169, w: 0.71608126}
+      force: 13
+  - waves:
+    - spawnPoint: {x: 8.172575, y: -7.022705}
+      rotation: {x: 0, y: 0, z: -0.6980169, w: 0.71608126}
+      force: 13
+  - waves:
+    - spawnPoint: {x: -0.89284825, y: -6.769351}
+      rotation: {x: 0, y: 0, z: -0.6980169, w: 0.71608126}
+      force: 11

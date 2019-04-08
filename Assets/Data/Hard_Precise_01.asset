@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059a4ef3751c2a14b85434791b4f5e35, type: 3}
+  m_Name: Hard_Precise_01
+  m_EditorClassIdentifier: 
+  delayBeforeStart: 0.5
+  delayAfterEnd: 0
+  level: 2
+  startPos: 0
+  directionMin: {x: 0, y: 0}
+  directionMax: {x: 0, y: 0}
+  forceMin: 0
+  forceMax: 0
+  forceMode: 0
+  offsetFromCenterMin: {x: 0, y: 0}
+  offsetFromCenterMax: {x: 0, y: 0}
+  delayBetween: 0.8
+  datas:
+  - waves:
+    - spawnPoint: {x: 10.875136, y: -4.1732864}
+      rotation: {x: 0, y: 0, z: -0.34821546, w: 0.9374145}
+      force: 15
+  - waves:
+    - spawnPoint: {x: 5.0533924, y: -6.4665537}
+      rotation: {x: 0, y: 0, z: -0.7297295, w: 0.683736}
+      force: 15
+    - spawnPoint: {x: 7.3977304, y: -6.02951}
+      rotation: {x: 0, y: 0, z: -0.48472673, w: 0.8746657}
+      force: 15

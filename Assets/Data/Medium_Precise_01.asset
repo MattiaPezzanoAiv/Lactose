@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059a4ef3751c2a14b85434791b4f5e35, type: 3}
+  m_Name: Medium_Precise_01
+  m_EditorClassIdentifier: 
+  delayBeforeStart: 0.5
+  delayAfterEnd: 0
+  level: 1
+  startPos: 0
+  directionMin: {x: 0, y: 0}
+  directionMax: {x: 0, y: 0}
+  forceMin: 0
+  forceMax: 0
+  forceMode: 0
+  offsetFromCenterMin: {x: 0, y: 0}
+  offsetFromCenterMax: {x: 0, y: 0}
+  delayBetween: 0.8
+  datas:
+  - waves:
+    - spawnPoint: {x: 6.589061, y: -7.4674945}
+      rotation: {x: 0, y: 0, z: -0.70216024, w: 0.4504914}
+      force: 18
+    - spawnPoint: {x: -1.4631555, y: -7.433444}
+      rotation: {x: 0, y: 0, z: -0.70146894, w: 0.45156693}
+      force: 18
+    - spawnPoint: {x: 2.1967793, y: -7.5364876}
+      rotation: {x: 0, y: 0, z: -0.70144296, w: 0.45160723}
+      force: 18
+  - waves:
+    - spawnPoint: {x: 0.018756956, y: -7.32673}
+      rotation: {x: 0, y: 0, z: -0.75668794, w: 0.65377617}
+      force: 15
+    - spawnPoint: {x: 4.12737, y: -7.534818}
+      rotation: {x: 0, y: 0, z: -0.7384896, w: 0.6742648}
+      force: 15
