@@ -14,20 +14,32 @@ public class UIMainPage : MonoBehaviour
     public Text tfVersion;
 
     public bool useRandomCurveForAnimation;
-    public AnimationCurve[] curves;
+    public AnimationCurve[] curvesX;
+    public AnimationCurve[] curvesY;
 
-    AnimationCurve Curve
+    private bool isX;
+
+    AnimationCurve CurveX
     {
         get
         {
-            return curves[Random.Range(0, curves.Length)];
+            isX = true;
+            return curvesX[Random.Range(0, curvesX.Length)];
+        }
+    }
+    AnimationCurve CurveY
+    {
+        get
+        {
+            isX = false;
+            return curvesY[Random.Range(0, curvesY.Length)];
         }
     }
 
     private void OnEnable()
     {
         if (GameManager.Instance != null)
-            bestScore.text = "Your best:\n" + GameManager.Instance.GetBestScore(); 
+            bestScore.text = "Your best:\n" + GameManager.Instance.GetBestScore();
     }
 
 
@@ -44,27 +56,70 @@ public class UIMainPage : MonoBehaviour
 
     public void ShowMain()
     {
-        StartCoroutine(Animate(othersRoot, mainRoot));
+        if (Random.Range(0f, 1f) > 0.5f)
+        {
+            StartCoroutine(Animate(othersRoot, mainRoot));
+            return;
+        }
+        StartCoroutine(AnimateScale(othersRoot, mainRoot));
     }
     public void ShowOther()
     {
-        StartCoroutine(Animate(mainRoot, othersRoot));
+        if (Random.Range(0f, 1f) > 0.5f)
+        {
+            StartCoroutine(Animate(mainRoot, othersRoot));
+            return;
+        }
+        StartCoroutine(AnimateScale(mainRoot, othersRoot));
+    }
+    IEnumerator AnimateScale(RectTransform exiting, RectTransform entering)
+    {
+        blockInput.SetActive(true);
+
+        for (float i = 0; i < 0.3; i += Time.deltaTime)
+        {
+            //exiting
+            float val = 1 - (i / 0.3f);
+            exiting.localScale = new Vector3(val, val, val);
+            yield return null;
+        }
+
+        exiting.localScale = new Vector3(0, 0, 0);
+        exiting.gameObject.SetActive(false);
+        entering.gameObject.SetActive(true);
+
+        for (float i = 0; i < 0.3; i += Time.deltaTime)
+        {
+            //exiting
+            float val = i / 0.3f;
+            entering.localScale = new Vector3(val, val, val);
+            yield return null;
+        }
+
+        entering.localScale = Vector3.one;
+        exiting.localScale = Vector3.one;
+        blockInput.SetActive(false);
     }
     IEnumerator Animate(RectTransform exiting, RectTransform entering, AnimationCurve animCurve = null)
     {
-        if(animCurve == null || useRandomCurveForAnimation)
+        if (animCurve == null || useRandomCurveForAnimation)
         {
-            animCurve = Curve;
+            animCurve = Random.Range(0f, 1f) > 0.5f ? CurveX : CurveY;
         }
+
 
         blockInput.SetActive(true);
 
         float time = animCurve.keys[animCurve.keys.Length - 1].time;
 
-        for (float i = 0; i < time; i+= Time.deltaTime)
+        for (float i = 0; i < time; i += Time.deltaTime)
         {
             //exiting
-            exiting.anchoredPosition = new Vector2(animCurve.Evaluate(i), exiting.anchoredPosition.y);
+            Vector2 pos = exiting.anchoredPosition;
+            pos.x = isX ? animCurve.Evaluate(i) : pos.x;
+            pos.y = isX ? pos.y : animCurve.Evaluate(i);
+
+            exiting.anchoredPosition = pos;
             yield return null;
         }
 
@@ -74,9 +129,16 @@ public class UIMainPage : MonoBehaviour
         for (float i = time; i > 0; i -= Time.deltaTime)
         {
             //entering
-            entering.anchoredPosition = new Vector2(animCurve.Evaluate(i), exiting.anchoredPosition.y);
+            Vector2 pos = exiting.anchoredPosition;
+            pos.x = isX ? animCurve.Evaluate(i) : pos.x;
+            pos.y = isX ? pos.y : animCurve.Evaluate(i);
+
+            entering.anchoredPosition = pos;
             yield return null;
         }
+
+        entering.anchoredPosition = Vector3.zero;
+        exiting.anchoredPosition = Vector3.zero;
         blockInput.SetActive(false);
     }
 }

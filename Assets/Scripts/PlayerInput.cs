@@ -144,7 +144,7 @@ public class PlayerInput : SingletonBehaviour<PlayerInput>
     //    {
     //        if(trail.name == name)
     //        {
-                
+
     //            break;
     //        }
     //    }
@@ -161,7 +161,8 @@ public class PlayerInput : SingletonBehaviour<PlayerInput>
     //}
     //public List<Color> GetAvailableTrailsColors()
     //{
-    //    return (from go in playerTrailsList where go.trail.GetComponent<ParticleSystem>() != null
+    //    return (from go in playerTrailsList
+    //            where go.trail.GetComponent<ParticleSystem>() != null
     //            select go.trail.GetComponent<ParticleSystem>().main.startColor.color).ToList();
     //}
     #endregion
