@@ -14287,7 +14287,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 18be152366d05294d87625b4f9fec6e1, type: 3}
+  m_Sprite: {fileID: 21300064, guid: f30a62a7bb2da984b956cbb330238fb6, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -40246,8 +40246,8 @@ MonoBehaviour:
   sliceOnDestroy: 0
   slicedPrefab: {fileID: 2123330393259153584, guid: 12f4e99a443593e45836e162c4be37ac,
     type: 3}
-  slicedLeft: {fileID: 21300000, guid: f30a62a7bb2da984b956cbb330238fb6, type: 3}
-  slicedRight: {fileID: 21300004, guid: f30a62a7bb2da984b956cbb330238fb6, type: 3}
+  slicedLeft: {fileID: 21300066, guid: f30a62a7bb2da984b956cbb330238fb6, type: 3}
+  slicedRight: {fileID: 21300068, guid: f30a62a7bb2da984b956cbb330238fb6, type: 3}
   availableLevels: 
   rootForSliced: {fileID: 1964921335}
   gfx: {fileID: 770071038}

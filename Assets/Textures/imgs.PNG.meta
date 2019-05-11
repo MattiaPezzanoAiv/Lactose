@@ -34,6 +34,9 @@ TextureImporter:
     21300058: imgs_29
     21300060: imgs_30
     21300062: imgs_31
+    21300064: imgs_32
+    21300066: imgs_33
+    21300068: imgs_34
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -715,7 +718,7 @@ TextureImporter:
         width: 161
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -735,7 +738,7 @@ TextureImporter:
         width: 164
         height: 211
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -755,13 +758,73 @@ TextureImporter:
         width: 148
         height: 204
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 28cd993967c7af947bd55314db845eef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: imgs_32
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 1637
+        width: 114
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4800289fe4a5494e97c874301ade411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: imgs_33
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 1778
+        width: 128
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7dd0f4499e8b5a46990e3c3a693e997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: imgs_34
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 1635
+        width: 131
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5091c3194b2483345adee65fb6ab0817
       vertices: []
       indices: 
       edges: []
